@@ -1,10 +1,35 @@
 body {
-  background-color: #fbfff7;
+  background-color: #f3f1f4;
+}
+header {
+  display: flexbox;
+  background-image: url(/images/Saskatchewan.jpg);
+}
+/*Nav styling makes it in to a nav bar*/
+nav {
+  list-style: none;
+  display: inline-flex;
+  margin: 10px;
+  border: 2px solid #302939;
+  background-color: #96a8bc;
+}
+/*Nav a change link color*/
+nav a {
+  text-decoration: none;
+  color: #302939;
+}
+p {
+  color: #302939;
 }
 footer {
+  color: #302939;
   margin: auto;
   width: 40%;
-  background-color: #a85a51;
+  background-color: #96a8bc;
   border-radius: 10px;
   padding: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: #302939;
 }
