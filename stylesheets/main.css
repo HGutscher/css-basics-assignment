@@ -2,9 +2,19 @@ body {
   background-color: #f3f1f4;
 }
 header {
-  display: flexbox;
+  margin: auto;
+  width: 90%;
+  border: 3px solid #302939;
   background-image: url(/images/Saskatchewan.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 55%;
+  background-size: 101%;
 }
+header h1 {
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
 /*Nav styling makes it in to a nav bar*/
 nav {
   list-style: none;
@@ -13,10 +23,37 @@ nav {
   border: 2px solid #302939;
   background-color: #96a8bc;
 }
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: 0;
+  list-style: none;
+  display: inline-flex;
+  padding: 17px 4px;
+}
+nav li:hover,
+nav li:focus {
+  background-color: #faf9fa;
+  border: 2px solid #302939;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #302939;
+}
 /*Nav a change link color*/
 nav a {
   text-decoration: none;
   color: #302939;
+}
+
+.active {
+  background-color: #302939;
+  margin: 0;
+  padding: 15px;
+  padding-left: 0;
+  border: 2px solid #302939;
+  color: #7d8175;
 }
 p {
   color: #302939;
