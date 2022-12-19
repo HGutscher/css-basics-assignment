@@ -1,18 +1,75 @@
-body {
-  background-color: #f3f1f4;
+/*
+  This styles all elements to have line spacing of 140% of the font size the element
+  line-height
+  margin will change the space from the edge of the element to the bordar
+*/
+* {
+  line-height: 140%;
+  margin: 0;
 }
-header {
+
+/*
+  This styles the html element(root element) to a default font-size of 62.5 of default font size of the browser
+  font-size style's the size of font
+*/
+html {
+  font-size: 62.5%;
+}
+
+/* 
+  this will style the body element and all elements in it
+
+  background-color styles the color of the background
+  the background color is set to #121212
+
+  color is the text color
+  the text color set to #ededed
+
+  the font size is set to 1.8 time the of the browser default
+
+  font-family styles the fonts
+  the font is set to arial if not avalible helvetica, then sans-serif defalt of the browser
+*/
+body {
   margin: auto;
-  width: 90%;
+  width: 1000px;
+  background-color: #f3f1f4;
+  font-size: 1.8rem;
+  color: #302939;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* 
+  styles the head box with the nav
+
+  margin set to auto to align to middle
+
+  width is to adjust the width
+  width of 54% of the window
+
+  background-image to set background as an image
+
+  background-repeat: no-repeat; to stop it from repeating
+
+  background-size changes the size of the background
+  styled size, position of y and border
+*/
+header {
   border: 3px solid #302939;
   background-image: url(/images/Saskatchewan.jpg);
+
   background-repeat: no-repeat;
   background-position-y: 55%;
-  background-size: 101%;
+  background-size: 100%;
 }
+
+/* 
+  style the h1 in the header margins
+*/
 header h1 {
   margin: 10px;
   margin-bottom: 0px;
+  font-size: 3.8rem;
 }
 
 /*Nav styling makes it in to a nav bar*/
@@ -23,49 +80,94 @@ nav {
   border: 2px solid #302939;
   background-color: #96a8bc;
 }
+
+/* 
+  styles the ul in the nav to remove excess of spacing
+*/
 nav ul {
   margin: 0;
   padding: 0;
 }
+
+/* 
+  styles the li in the nav to noot look like list 
+  display 
+*/
 nav li {
-  margin: 0;
   list-style: none;
   display: inline-flex;
-  padding: 17px 4px;
 }
-nav li:hover,
-nav li:focus {
+
+/* 
+  styles the nav link when hover over or tabed through    
+*/
+nav a:hover,
+nav a:focus {
   background-color: #faf9fa;
-  border: 2px solid #302939;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #302939;
-}
-/*Nav a change link color*/
-nav a {
-  text-decoration: none;
   color: #302939;
 }
 
-.active {
+/*
+  Nav a / nav a visited change link color
+*/
+nav a,
+nav a:visited {
+  color: #302939;
+  text-decoration: none;
+  padding: 17px 4px;
+}
+
+/* 
+  styles the active nav a to be cosistently greyish navy
+*/
+#active,
+#active:hover,
+#active:focus {
+  color: #faf9fa;
   background-color: #302939;
-  margin: 0;
-  padding: 15px;
-  padding-left: 0;
-  border: 2px solid #302939;
-  color: #7d8175;
 }
-p {
-  color: #302939;
+
+/*
+  this will style the main content section
+
+  margin will change the space from the edge of the element to the bordar to  of the width of the window space
+*/
+main {
 }
+
+/*section styling add spacing color and box to content*/
+section {
+  margin-top: 5px;
+  background-color: #faf9fa;
+  border: 5px solid #7d8175;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* 
+  this styles all things in spans
+  font-weight changes the text thickness and will bold will make it well... bold
+*/
+span {
+  font-weight: bold;
+  text-decoration: underline 2px;
+}
+
+/* 
+  styles the footer to be greyish navy, rounded, 
+*/
 footer {
-  color: #302939;
   margin: auto;
-  width: 40%;
+  color: #302939;
+  width: 600px;
   background-color: #96a8bc;
   border-radius: 10px;
   padding: 10px;
 }
+
+/* 
+  removes the link decorations and text color to greyish navy in the footer
+*/
 footer a {
   text-decoration: none;
   color: #302939;
