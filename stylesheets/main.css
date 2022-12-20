@@ -1,3 +1,17 @@
+/* 
+    For colors I chose the color #96a8bc and #7d8175 
+  from a triadic pallate due to good contrast, the green
+  matching with the maps, and they represent the sky, sea, and land.
+  Blue is associated with open space, freedom, and istitution, all thing associated with treaty.
+  Green is associated with nature mainly(or money).
+  I didn't use the other color of the palate because #BC96A8 didn't fit with my visual content.
+
+    I used light theme due to it implimenting information better and what images I
+  do have are manly information based.
+
+  -webki-_____ -moz-_____ -o-_____ helps make it more reliable across platforms and software
+*/
+
 /*
   This styles all elements to have line spacing of 140% of the font size the element
   line-height
@@ -20,20 +34,23 @@ html {
   this will style the body element and all elements in it
 
   background-color styles the color of the background
-  the background color is set to #121212
+  the background color is set to #e3e1e4
 
   color is the text color
   the text color set to #ededed
 
   the font size is set to 1.8 time the of the browser default
 
+  color sets text color
+  text color set to #302939
+
   font-family styles the fonts
-  the font is set to arial if not avalible helvetica, then sans-serif defalt of the browser
+  the font is set to arial, if not avalible helvetica, then sans-serif defalt of the browser
 */
 body {
   margin: auto;
   width: 1000px;
-  background-color: #f3f1f4;
+  background-color: #e3e1e4;
   font-size: 1.8rem;
   color: #302939;
   font-family: Verdana, Tahoma, sans-serif;
@@ -57,14 +74,23 @@ body {
 header {
   border: 3px solid #302939;
   background-image: url(/images/Saskatchewan.jpg);
-
   background-repeat: no-repeat;
   background-position-y: 55%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
   background-size: 100%;
 }
 
 /* 
   style the h1 in the header margins
+
+  margin of 10px
+
+  margin-bottem adds margin to bottem
+  no margin on bottem
+
+  font size of 3.8 time the browser default
 */
 header h1 {
   margin: 10px;
@@ -72,9 +98,28 @@ header h1 {
   font-size: 3.8rem;
 }
 
-/*Nav styling makes it in to a nav bar*/
+/*
+  Nav styling makes it in to a nav bar
+
+  list-style is the styling that goes into the ul/ol
+  no list styling
+
+  display is the type of box it is
+  display in an inline-flex box
+
+  margin of 10px
+
+  border adds and styles the border
+  boorder 2px thick and solid #302939
+
+  background-color set to #96a8bc
+*/
 nav {
   list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 10px;
   border: 2px solid #302939;
@@ -82,7 +127,9 @@ nav {
 }
 
 /* 
-  styles the ul in the nav to remove excess of spacing
+  styles the ul in the nav to remove excess of spacing in margin and padding
+  
+  padding in the space between the border and content
 */
 nav ul {
   margin: 0;
@@ -91,15 +138,26 @@ nav ul {
 
 /* 
   styles the li in the nav to noot look like list 
-  display 
+
+  no list styling
+
+  display in an inline-flex
 */
 nav li {
   list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 /* 
-  styles the nav link when hover over or tabed through    
+  styles the nav link when hover over or tabed through
+
+  background-color set to faf9fa
+
+  text color set to #302939
 */
 nav a:hover,
 nav a:focus {
@@ -108,7 +166,14 @@ nav a:focus {
 }
 
 /*
-  Nav a / nav a visited change link color
+  styles nav a and nav a after being visited
+
+  text  color set to #302939
+  
+  text-decoration it some of the styling of text
+  no text decoration
+
+  padding of 17px on top and bottem, 4px on left and right
 */
 nav a,
 nav a:visited {
@@ -118,7 +183,11 @@ nav a:visited {
 }
 
 /* 
-  styles the active nav a to be cosistently greyish navy
+  styles the Id of active and when hover over or tabed through
+
+  text color set to #faf9fa
+
+  background color set to #302939
 */
 #active,
 #active:hover,
@@ -128,47 +197,69 @@ nav a:visited {
 }
 
 /*
-  this will style the main content section
+  section styling
 
-  margin will change the space from the edge of the element to the bordar to  of the width of the window space
+  margin-top changes margin on top
+
+  margin on top of 5px
+
+  background color set to #faf9fa
+
+  border-radius curves the corners
+  border radius of 10px
+
+  padding of 10px
 */
-main {
-}
-
-/*section styling add spacing color and box to content*/
 section {
   margin-top: 5px;
   background-color: #faf9fa;
   border: 5px solid #7d8175;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
   padding: 10px;
 }
 
 /* 
   this styles all things in spans
+
   font-weight changes the text thickness and will bold will make it well... bold
 */
 span {
   font-weight: bold;
-  text-decoration: underline 2px;
 }
 
 /* 
-  styles the footer to be greyish navy, rounded, 
+  styles the footer
+
+  margin of auto
+
+  text color of #faf9fa
+
+  width of 600px
+
+  background-color of #302939
+
+  padding of 10px
 */
 footer {
   margin: auto;
-  color: #302939;
+  color: #faf9fa;
   width: 600px;
-  background-color: #96a8bc;
+  background-color: #302939;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
   padding: 10px;
 }
 
 /* 
-  removes the link decorations and text color to greyish navy in the footer
+  styles a in footer and when hoverd over of tabed through
+
+  text color of #faf9fa
 */
-footer a {
-  text-decoration: none;
-  color: #302939;
+footer a,
+footer a:hover,
+footer a:focus {
+  color: #faf9fa;
 }
