@@ -6,6 +6,8 @@
   Green is associated with nature mainly(or money).
   I didn't use the other color of the palate because #BC96A8 didn't fit with my visual content.
 
+  As per our discussion, the dark purple is used as more of a neutral colour.
+
     I used light theme due to it implimenting information better and what images I
   do have are manly information based.
 
@@ -73,7 +75,7 @@ body {
 */
 header {
   border: 3px solid #302939;
-  background-image: url(/images/Saskatchewan.jpg);
+  background-image: url(/css-basics-assignment/images/Saskatchewan.jpg);
   background-repeat: no-repeat;
   background-position-y: 55%;
   -webkit-background-size: 100% 100%;
