@@ -1,12 +1,10 @@
 /* 
-    For colors I chose the color #96a8bc and #7d8175 
-  from a triadic pallate due to good contrast, the green
-  matching with the maps, and they represent the sky, sea, and land.
+    For color I chose the colour #96a8bc 
+  from a triadic pallate with blue represent the sky, sea, and land.
   Blue is associated with open space, freedom, and istitution, all thing associated with treaty.
-  Green is associated with nature mainly(or money).
-  I didn't use the other color of the palate because #BC96A8 didn't fit with my visual content.
 
-  As per our discussion, the dark purple is used as more of a neutral colour.
+    As per our discussion, the dark purple is used as more of a neutral colour 
+  and by your direction it's also appart of my colour palate when used in big chunks (ie.nav).
 
     I used light theme due to it implimenting information better and what images I
   do have are manly information based.
@@ -215,7 +213,7 @@ nav a:visited {
 section {
   margin-top: 5px;
   background-color: #faf9fa;
-  border: 5px solid #7d8175;
+  border: 5px solid #302939;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
